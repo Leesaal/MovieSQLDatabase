@@ -1,0 +1,54 @@
+
+<div class="flex justify-center items-center">
+    <h1 class="w-1/2 mx-auto text-center"> {{ movie_name }} </h1>
+</div>
+
+
+<div id="poster-div" class="bg-yellow-500 flex justify-center items-center">
+    <img src="{{poster_URL}}"" class="block rounded-lg sm:w-32" alt="poster"/>
+</div>
+
+
+   
+
+<div class="flex justify-center items-center">
+    <div class="flex">
+        <div id="Genre" class="bg-purple-500 inline-block">
+            <p>Genre: {{genre}}</p>
+        </div>
+        <div id="rating" class="bg-red-500 inline-block">
+            <P>Rating: {{rating}}%</P>
+        </div>   
+        <div id="runtime" class="bg-yellow-500 inline-block">
+            <P>Runtime: {{runtime}} minutes</P>
+        </div>
+    </div>
+</div>  
+
+
+<div class="flex justify-center items-center">
+
+    <div id="Synopsis" class="bg-orange-600 w-1/2 mx-auto text-center">
+        <p>{{ description }}
+        </p>
+    </div>
+
+</div>
+
+<div class="trailer container self-center items-center flex rounded w-1/2" id="movieTrailer">
+    <iframe width="560" height="215" src="{{trailer}}" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen id="trailer"></iframe>
+</div>
+
+
+<div id="reviews" class="bg-pink-500 flex justify-center items-center">
+    <h2 class="block">Reviews</h2>
+    <p class="block">{{review}}</p>
+    <div class="review">
+        <input autocomplete="off" id="review" name="review" type="text"
+            class="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600 bg-stone-200"
+            placeholder="Review here">
+        <button type="submit">Search</button>
+    </div>
+</div>
