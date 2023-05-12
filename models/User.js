@@ -7,7 +7,7 @@ class User extends Model {}
 User.init(
   {
     // defines the columns
-    id: {
+    user_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
@@ -29,14 +29,6 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    // review_ID: {
-    //   type: DataTypes.INTEGER,
-    //   allowNull: false,
-    //   references: {
-    //     model: "review_list",
-    //     key: "id",
-    //   },
-    //   },
   },
 
   {
